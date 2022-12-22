@@ -13,10 +13,12 @@
 ## Usage
 
 ```php
-  $envLoader = new EnvLoader($this->path, $this->file);
+  $path = 'test/';
+  $file = '.env';
+  $envLoader = new EnvLoader($path $file);
   $data = $envLoader->get_data();
   // or
-  $data = EnvLoader::load_data($this->path, $this->file);
+  $data = EnvLoader::load_data($path, $file);
 ````
 
 ## Directory structure
