@@ -1,5 +1,5 @@
 # Dot Env Loader
-
+> used for reading env files
 ## Install & Dependence
 
 - php unit
