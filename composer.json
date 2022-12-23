@@ -23,6 +23,7 @@
       "tests\\": "tests/"
     }
   },
+  "minimum-stability": "dev",
   "authors": [
     {
       "name": "omarhossameldin",
