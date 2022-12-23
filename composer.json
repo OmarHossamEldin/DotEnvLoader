@@ -2,6 +2,8 @@
   "name": "reneknox/dot-env-loader",
   "description": "used for reading env files",
   "license": "MIT",
+  "keywords": ["env","env-file","env-loader"],
+  "type": "library",
   "require": {
     "php": ">=7.4"
   },
