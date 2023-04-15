@@ -22,9 +22,10 @@ class Validator
     public static function validate_content(array $file): array
     {
         return array_filter($file, function ($line) {
+            $line = trim($line);
             if ($line === PHP_EOL) return;
             if (stristr($line, '#')) return;
-            return $line;
+            if (stristr($line, '=')) return $line;
         });
     }
 }
