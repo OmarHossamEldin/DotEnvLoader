@@ -24,7 +24,7 @@ class Validator
         return array_filter($file, function ($line) {
             $line = trim($line);
             if ($line === PHP_EOL) return;
-            if (stristr($line, '#')) return;
+            if (substr($line, 0, 1) === '#') return;
             if (stristr($line, '=')) return $line;
         });
     }
